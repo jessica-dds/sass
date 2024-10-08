@@ -1,0 +1,44 @@
+%notification-shared {
+    border-radius: 8px;
+    max-width: 300px;
+    background-color: #56afe367;
+    border: 1px solid #03649c67;
+    color: #03649c67;
+    padding: 16px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+%content-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+.mensagem-informativa {
+    @extend %notification-shared;
+    @extend%content-flex;
+}
+
+.mensagem-erro {
+    @extend %notification-shared;
+    background-color: #b26767;
+    border-color: #ff0000;
+    color: #ff0000;
+}
+
+.mensagem-alerta {
+    @extend %notification-shared;
+    background-color: #f1f152;
+    border-color: #b58337;
+    color: #b58337;
+}
+
+.mensagem-sucesso {
+    @extend %notification-shared;
+    background-color: #7fb57f;
+    border-color: #0c580c;
+    color: #0c580c;
+}
